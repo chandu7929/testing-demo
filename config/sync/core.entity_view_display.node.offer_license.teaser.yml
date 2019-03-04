@@ -1,0 +1,30 @@
+uuid: b8d33503-0161-40d9-bb73-51a116854db0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.offer_license.body
+    - node.type.offer_license
+  module:
+    - text
+    - user
+id: node.offer_license.teaser
+targetEntityType: node
+bundle: offer_license
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

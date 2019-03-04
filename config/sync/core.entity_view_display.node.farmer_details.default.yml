@@ -1,0 +1,28 @@
+uuid: 08d4eca1-afa5-4b8c-a07a-58dc61bf0f19
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.farmer_details.body
+    - node.type.farmer_details
+  module:
+    - text
+    - user
+id: node.farmer_details.default
+targetEntityType: node
+bundle: farmer_details
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

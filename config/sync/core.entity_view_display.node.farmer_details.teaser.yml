@@ -1,0 +1,30 @@
+uuid: 32e0e4c8-e8e9-4447-87cf-b0ce98a73dab
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.farmer_details.body
+    - node.type.farmer_details
+  module:
+    - text
+    - user
+id: node.farmer_details.teaser
+targetEntityType: node
+bundle: farmer_details
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

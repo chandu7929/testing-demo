@@ -1,0 +1,28 @@
+uuid: 116dae14-a7aa-4b0e-beb1-465283436582
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.offer_license.body
+    - node.type.offer_license
+  module:
+    - text
+    - user
+id: node.offer_license.default
+targetEntityType: node
+bundle: offer_license
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

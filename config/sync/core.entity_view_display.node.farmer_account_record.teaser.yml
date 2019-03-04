@@ -1,0 +1,30 @@
+uuid: afc9825c-f341-4b4d-a5cc-1671d8cd6179
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.farmer_account_record.body
+    - node.type.farmer_account_record
+  module:
+    - text
+    - user
+id: node.farmer_account_record.teaser
+targetEntityType: node
+bundle: farmer_account_record
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

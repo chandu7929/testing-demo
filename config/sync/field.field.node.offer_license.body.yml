@@ -1,0 +1,22 @@
+uuid: ad7eab9e-d297-4d8e-8bd4-cfe6ec6e6764
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.offer_license
+  module:
+    - text
+id: node.offer_license.body
+field_name: body
+entity_type: node
+bundle: offer_license
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

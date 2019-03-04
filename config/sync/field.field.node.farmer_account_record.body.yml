@@ -1,0 +1,22 @@
+uuid: 0c4caa30-4f3c-4c80-a145-7d0cf0273566
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.farmer_account_record
+  module:
+    - text
+id: node.farmer_account_record.body
+field_name: body
+entity_type: node
+bundle: farmer_account_record
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

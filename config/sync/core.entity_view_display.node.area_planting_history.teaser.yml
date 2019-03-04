@@ -1,0 +1,30 @@
+uuid: d1929f6e-2ef6-42d0-b7ee-4b5cc994866e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.area_planting_history.body
+    - node.type.area_planting_history
+  module:
+    - text
+    - user
+id: node.area_planting_history.teaser
+targetEntityType: node
+bundle: area_planting_history
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

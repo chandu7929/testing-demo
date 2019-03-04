@@ -1,0 +1,28 @@
+uuid: 6d56d203-2184-4f08-892f-a1c8660a177d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.farmer_account_record.body
+    - node.type.farmer_account_record
+  module:
+    - text
+    - user
+id: node.farmer_account_record.default
+targetEntityType: node
+bundle: farmer_account_record
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
